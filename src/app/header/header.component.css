@@ -1,0 +1,17 @@
+header {
+  width: 100%;
+  background: rgb(47, 47, 164);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(198, 197, 197);
+  margin-bottom: 30px;
+}
+i {
+  font-size: 30px;
+  margin: 0px 10px;
+}
+i:hover {
+  color: yellow;
+}

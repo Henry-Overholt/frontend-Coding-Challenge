@@ -16,8 +16,6 @@ export class EnrolleeComponent implements OnInit {
     this.id = this.apiService.getId();
     if (this.id != undefined) {
       this.apiService.getEnrolleesById(this.id).subscribe((res) => {
-        console.log(res);
-
         this.enrollee = res;
         this.apiService.setEnrolleeToEdit(this.enrollee);
       });

@@ -1,8 +1,19 @@
 <body>
-  <div class="ennrolleesContainer" *ngIf="enrollees != undefined">
+  <form>
+    <label for="search">Search:</label>
+    <input
+      type="text"
+      name="search"
+      placeholder="Search for Enrollee by Name"
+      [(ngModel)]="filterText"
+    />
+    <button (click)="resetForm()">Reset Search</button>
+  </form>
+  <div class="enrolleesContainer" *ngIf="enrollees != undefined">
+    <h1>Enrollee</h1>
     <div
       class="enrollee"
-      *ngFor="let enrollee of enrollees; index as i"
+      *ngFor="let enrollee of getFilterEnrollees(); index as i"
       [ngClass]="enrollee.active ? 'active' : 'nonActive'"
       (click)="handleClick(i)"
       title="{{ enrollee.name }}"

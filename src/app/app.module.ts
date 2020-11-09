@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { EnrolleeComponent } from './enrollee/enrollee.component';
 import { EditEnrolleeComponent } from './edit-enrollee/edit-enrollee.component';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     EnrolleeComponent,
     EditEnrolleeComponent,
+    HeaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],

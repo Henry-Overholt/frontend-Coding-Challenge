@@ -47,7 +47,6 @@ export class EditEnrolleeComponent implements OnInit {
       name: form.value.name,
       dateOfBirth: this.enrollee.dateOfBirth,
     };
-    console.log(editEnrollee);
     this.apiService
       .putEnrollees(this.enrollee.id, editEnrollee)
       .subscribe((res) => {
