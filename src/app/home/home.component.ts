@@ -13,7 +13,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.apiService.getAllEnrollees().subscribe((res) => {
-      console.log(res);
       this.enrollees = res;
     });
   }

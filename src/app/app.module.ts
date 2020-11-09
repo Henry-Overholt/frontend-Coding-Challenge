@@ -6,10 +6,16 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { EnrolleeComponent } from './enrollee/enrollee.component';
 import { EditEnrolleeComponent } from './edit-enrollee/edit-enrollee.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, EnrolleeComponent, EditEnrolleeComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    EnrolleeComponent,
+    EditEnrolleeComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

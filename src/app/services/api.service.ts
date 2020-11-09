@@ -15,7 +15,7 @@ export class ApiService {
   getEnrolleesById(id: string): Observable<any> {
     return this.http.get(`http://localhost:8080/enrollees/${id}`);
   }
-  editEnrollees(id: string, newInfo: any): Observable<any> {
+  putEnrollees(id: string, newInfo: any): Observable<any> {
     return this.http.put(`http://localhost:8080/enrollees/${id}`, newInfo);
   }
   setId(id): void {

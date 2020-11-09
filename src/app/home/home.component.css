@@ -12,13 +12,37 @@ body {
   width: 90%;
   padding: 2px;
   text-align: center;
-  border: 2px solid black;
-  border-radius: 10%;
-  margin: 5px 0px;
+  color: rgb(198, 197, 197);
+  background: rgb(47, 47, 164);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0px;
+  box-shadow: 1px 1px 1px 1px rgb(63, 63, 63);
+}
+.enrollee:hover {
+  transform: scale(1.03);
+}
+h2 {
+  padding-left: 40px;
 }
 .nonActive {
   color: grey;
   border-color: grey;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  margin-right: 40px;
+  background: green;
+  border-radius: 100%;
+}
+.green {
+  background: green;
+}
+.red {
+  background: red;
 }
 .enrolleeDetails {
   border: 1px solid blue;

@@ -1,1 +1,31 @@
-<p>edit-enrollee works!</p>
+<body>
+  <form
+    #editForm="ngForm"
+    (ngSubmit)="handleFormSubmit(editForm)"
+    *ngIf="enrollee != undefined"
+  >
+    <i class="fas fa-window-close" (click)="cancelForm()"></i>
+    <h2>Edit Enrollee</h2>
+    <div class="nameInputContainer">
+      <label for="name">Name:</label>
+      <input type="text" name="name" [ngModel]="enrollee.name" />
+    </div>
+    <div class="activeStatusContainer">
+      <h3>Active Status:</h3>
+      <div
+        class="toggleContainer"
+        (click)="toggleActiveStatus()"
+        [ngClass]="active ? 'green' : 'red'"
+      >
+        <p [ngClass]="active ? 'nonActive' : 'active'">{{ isActive }}</p>
+        <div
+          class="innerToggle"
+          [ngClass]="active ? 'active' : 'nonActive'"
+        ></div>
+      </div>
+    </div>
+    <h3><span>ID:</span> {{ enrollee.id }}</h3>
+    <h3><span>Date of Birth:</span> {{ enrollee.dateOfBirth }}</h3>
+    <button>Save</button>
+  </form>
+</body>

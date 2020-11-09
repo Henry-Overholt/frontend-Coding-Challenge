@@ -5,8 +5,10 @@
       *ngFor="let enrollee of enrollees; index as i"
       [ngClass]="enrollee.active ? 'active' : 'nonActive'"
       (click)="handleClick(i)"
+      title="{{ enrollee.name }}"
     >
       <h2>{{ enrollee.name }}</h2>
+      <div class="circle" [ngClass]="enrollee.active ? 'green' : 'red'"></div>
     </div>
   </div>
 </body>

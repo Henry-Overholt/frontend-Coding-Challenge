@@ -28,4 +28,7 @@ export class EnrolleeComponent implements OnInit {
   handleEditClick(): void {
     this.router.navigate(['/enrollee/edit']);
   }
+  handleBackArrowClick(): void {
+    this.router.navigate(['/home']);
+  }
 }
