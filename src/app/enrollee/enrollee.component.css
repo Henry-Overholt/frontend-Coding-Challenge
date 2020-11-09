@@ -20,16 +20,16 @@ body {
 }
 .fa-arrow-circle-left {
   position: absolute;
-  color: yellow;
+  color: rgb(198, 197, 197);
   font-size: 50px;
   background: rgb(47, 47, 164);
   top: -15px;
   left: -15px;
   border-radius: 100%;
-  box-shadow: 1px 1px 2px 2px rgb(198, 197, 197);
 }
 .fa-arrow-circle-left:hover {
   transform: scale(1.05);
+  color: yellow;
 }
 button {
   position: absolute;

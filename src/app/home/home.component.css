@@ -14,17 +14,18 @@ body {
 form {
   width: 90%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 input {
-  width: 70%;
+  width: 100%;
   height: 30px;
   font-size: 20px;
 }
 button {
   height: 30px;
-  width: 25%;
+  width: 100%;
   border: 2px solid rgb(47, 47, 164);
   border-radius: 5px;
   font-size: 20px;
@@ -86,6 +87,7 @@ h2 {
 
   animation: slideIn 1s linear forwards;
 }
+
 @keyframes slideIn {
   to {
     left: 50%;
