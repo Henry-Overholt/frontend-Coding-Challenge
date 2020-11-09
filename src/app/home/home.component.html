@@ -1,1 +1,12 @@
-<p>home works!</p>
+<body>
+  <div class="ennrolleesContainer" *ngIf="enrollees != undefined">
+    <div
+      class="enrollee"
+      *ngFor="let enrollee of enrollees; index as i"
+      [ngClass]="enrollee.active ? 'active' : 'nonActive'"
+      (click)="handleClick(i)"
+    >
+      <h2>{{ enrollee.name }}</h2>
+    </div>
+  </div>
+</body>

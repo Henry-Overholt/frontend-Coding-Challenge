@@ -6,8 +6,28 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ApiService {
+  id: string;
+  enrolleeToEdit: any;
   constructor(private http: HttpClient) {}
   getAllEnrollees(): Observable<any> {
     return this.http.get('http://localhost:8080/enrollees');
+  }
+  getEnrolleesById(id: string): Observable<any> {
+    return this.http.get(`http://localhost:8080/enrollees/${id}`);
+  }
+  editEnrollees(id: string, newInfo: any): Observable<any> {
+    return this.http.put(`http://localhost:8080/enrollees/${id}`, newInfo);
+  }
+  setId(id): void {
+    this.id = id;
+  }
+  setEnrolleeToEdit(enrollee): void {
+    this.enrolleeToEdit = enrollee;
+  }
+  getId(): string {
+    return this.id;
+  }
+  getEnrolleeToEdit(): any {
+    return this.enrolleeToEdit;
   }
 }

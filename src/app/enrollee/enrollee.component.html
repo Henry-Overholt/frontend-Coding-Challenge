@@ -1,0 +1,9 @@
+<body>
+  <div class="enrolleeContainer" *ngIf="enrollee != undefined">
+    <h1>NAME: {{ enrollee.name }}</h1>
+    <h2><span *ngIf="!enrollee.active">Not - </span>Active</h2>
+    <h3>ID: {{ enrollee.id }}</h3>
+    <h3>DOB: {{ enrollee.dateOfBirth }}</h3>
+    <button (click)="handleEditClick()">Edit Enrollee</button>
+  </div>
+</body>

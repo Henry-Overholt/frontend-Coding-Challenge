@@ -1,0 +1,36 @@
+body {
+  width: 100%;
+  position: relative;
+}
+.enrolleesContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.enrollee {
+  width: 90%;
+  padding: 2px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10%;
+  margin: 5px 0px;
+}
+.nonActive {
+  color: grey;
+  border-color: grey;
+}
+.enrolleeDetails {
+  border: 1px solid blue;
+  position: absolute;
+  left: -100px;
+  top: 25%;
+
+  animation: slideIn 1s linear forwards;
+}
+@keyframes slideIn {
+  to {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
