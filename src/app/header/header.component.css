@@ -1,7 +1,7 @@
 header {
   width: 100%;
   background: rgb(47, 47, 164);
-  height: 50px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,8 +10,17 @@ header {
 }
 i {
   font-size: 30px;
+  width: 45px;
+  height: 45px;
+  border: 3px solid rgb(47, 47, 164);
+  border-radius: 100%;
   margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 i:hover {
   color: yellow;
+  border-color: yellow;
+  transform: scale(1.03);
 }

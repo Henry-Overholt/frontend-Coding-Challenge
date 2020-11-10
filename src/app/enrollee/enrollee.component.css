@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
   box-shadow: 2px 2px 5px 5px rgb(198, 197, 197);
   margin-top: 50px;
@@ -42,9 +42,33 @@ button {
   background: rgb(47, 47, 164);
   bottom: 20px;
   right: 20px;
+  box-shadow: none;
+  outline: none;
 }
 button:hover {
   transform: scale(1.05);
   border-color: yellow;
   color: yellow;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+h2 {
+  display: flex;
+  align-items: center;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin-left: 5px;
+}
+span + .red {
+  background: red;
+}
+span + .green {
+  background: green;
 }

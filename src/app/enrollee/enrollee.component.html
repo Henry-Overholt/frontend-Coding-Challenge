@@ -3,9 +3,15 @@
     <h1>Enrollee Details</h1>
     <i class="fas fa-arrow-circle-left" (click)="handleBackArrowClick()"></i>
     <h2>Name: {{ enrollee.name }}</h2>
-    <h2>Status: <span *ngIf="!enrollee.active">Not </span>Active</h2>
+    <h2>
+      Status:
+      <span [ngClass]="enrollee.active ? 'green' : 'red'"
+        ><span *ngIf="!enrollee.active">Not </span>Active</span
+      >
+      <div class="circle" [ngClass]="enrollee.active ? 'green' : 'red'"></div>
+    </h2>
     <h3>ID: {{ enrollee.id }}</h3>
-    <h3>DOB: {{ enrollee.dateOfBirth }}</h3>
+    <h3>DOB: {{ enrollee.dateOfBirth | date }}</h3>
     <button (click)="handleEditClick()">
       <i class="fas fa-pencil-alt"></i>
     </button>

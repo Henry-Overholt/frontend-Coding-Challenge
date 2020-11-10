@@ -56,7 +56,7 @@ export class EditEnrolleeComponent implements OnInit {
           console.log("Edit didn't save");
         }
       });
-    this.router.navigate(['/home']);
+    this.router.navigate(['/enrollee']);
   }
   cancelForm() {
     this.router.navigate(['/home']);

@@ -10,7 +10,8 @@
     <button (click)="resetForm()">Reset Search</button>
   </form>
   <div class="enrolleesContainer" *ngIf="enrollees != undefined">
-    <h1>Enrollee</h1>
+    <h1>Enrollees</h1>
+    <app-loader *ngIf="enrollees === undefined"></app-loader>
     <div
       class="enrollee"
       *ngFor="let enrollee of getFilterEnrollees(); index as i"

@@ -8,6 +8,7 @@ import { EnrolleeComponent } from './enrollee/enrollee.component';
 import { EditEnrolleeComponent } from './edit-enrollee/edit-enrollee.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { HeaderComponent } from './header/header.component';
     EnrolleeComponent,
     EditEnrolleeComponent,
     HeaderComponent,
+    LoaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],

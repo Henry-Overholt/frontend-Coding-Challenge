@@ -24,7 +24,7 @@ input {
   font-size: 20px;
 }
 button {
-  height: 30px;
+  height: 40px;
   width: 100%;
   border: 2px solid rgb(47, 47, 164);
   border-radius: 5px;
@@ -32,7 +32,7 @@ button {
   color: rgb(198, 197, 197);
   background: rgb(47, 47, 164);
   box-shadow: 1px 1px 1px 1px rgb(63, 63, 63);
-  margin: 0px 5px;
+  margin: 5px 0px;
 }
 button:hover {
   transform: scale(1.03);
@@ -78,19 +78,4 @@ h2 {
 }
 .red {
   background: red;
-}
-.enrolleeDetails {
-  border: 1px solid blue;
-  position: absolute;
-  left: -100px;
-  top: 25%;
-
-  animation: slideIn 1s linear forwards;
-}
-
-@keyframes slideIn {
-  to {
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
