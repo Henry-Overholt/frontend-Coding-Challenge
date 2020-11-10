@@ -79,3 +79,27 @@ h2 {
 .red {
   background: red;
 }
+@media screen and (min-width: 630px) {
+  .enrolleesContainer {
+    width: 80%;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .enrollee {
+    width: 40%;
+    margin: 10px;
+  }
+  form {
+    width: 50%;
+    flex-direction: row;
+  }
+  input {
+    height: 40px;
+  }
+  button {
+    width: 40%;
+    height: 40px;
+    margin: 0px 10px;
+  }
+}

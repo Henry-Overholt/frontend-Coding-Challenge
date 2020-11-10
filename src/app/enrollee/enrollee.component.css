@@ -91,3 +91,8 @@ span + .green {
     transform: translate(-50%);
   }
 }
+@media screen and (min-width: 630px) {
+  .enrolleeContainer {
+    width: 50%;
+  }
+}

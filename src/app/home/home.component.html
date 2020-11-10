@@ -9,8 +9,8 @@
     />
     <button (click)="resetForm()">Reset Search</button>
   </form>
+  <h1>Enrollees</h1>
   <div class="enrolleesContainer" *ngIf="enrollees != undefined">
-    <h1>Enrollees</h1>
     <app-loader *ngIf="enrollees === undefined"></app-loader>
     <div
       class="enrollee"

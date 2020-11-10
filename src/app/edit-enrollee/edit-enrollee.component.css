@@ -93,7 +93,6 @@ input {
   padding-left: 10px;
   caret-color: yellow;
 }
-
 label {
   font-size: 20px;
   margin-right: 10px;
@@ -112,10 +111,6 @@ button:hover {
   border-color: yellow;
   color: yellow;
 }
-h3 {
-  margin-left: 40px;
-  align-self: flex-start;
-}
 span {
   color: yellow;
 }
@@ -130,4 +125,7 @@ span {
   }
 }
 @media screen and (min-width: 630px) {
+  form {
+    width: 50%;
+  }
 }

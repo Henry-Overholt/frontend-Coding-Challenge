@@ -50,11 +50,6 @@ export class EditEnrolleeComponent implements OnInit {
     this.apiService
       .putEnrollees(this.enrollee.id, editEnrollee)
       .subscribe((res) => {
-        if (res) {
-          console.log('Success');
-        } else {
-          console.log("Edit didn't save");
-        }
         this.router.navigate(['/enrollee']);
       });
   }

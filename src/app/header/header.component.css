@@ -24,3 +24,14 @@ i:hover {
   border-color: yellow;
   transform: scale(1.03);
 }
+@media screen and (min-width: 630px) {
+  header {
+    height: 100px;
+    font-size: 30px;
+  }
+  i {
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+  }
+}
