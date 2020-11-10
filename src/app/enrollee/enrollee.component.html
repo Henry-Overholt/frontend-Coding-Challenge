@@ -1,6 +1,10 @@
 <body>
   <app-loader *ngIf="enrollee === undefined"></app-loader>
-  <div class="enrolleeContainer" *ngIf="enrollee != undefined">
+  <div
+    class="enrolleeContainer"
+    id="enrolleeContainer"
+    *ngIf="enrollee != undefined"
+  >
     <h1>Enrollee Details</h1>
     <i
       class="fas fa-arrow-left"

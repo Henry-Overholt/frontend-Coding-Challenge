@@ -3,6 +3,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .enrolleeContainer {
   width: 80%;
@@ -17,7 +18,11 @@ body {
   position: relative;
   box-shadow: 2px 2px 5px 5px rgb(198, 197, 197);
   margin-top: 50px;
+  /* left: -500px;
+  transform: rotate(15deg);
+  animation: slideIn 0.5s linear forwards; */
 }
+
 .fa-arrow-left {
   position: absolute;
   font-size: 50px;
@@ -79,4 +84,10 @@ span + .red {
 }
 span + .green {
   background: green;
+}
+@keyframes slideIn {
+  to {
+    left: 40%;
+    transform: translate(-50%);
+  }
 }
