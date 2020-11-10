@@ -18,18 +18,26 @@ body {
   box-shadow: 2px 2px 5px 5px rgb(198, 197, 197);
   margin-top: 50px;
 }
-.fa-arrow-circle-left {
+.fa-arrow-left {
   position: absolute;
-  color: rgb(198, 197, 197);
   font-size: 50px;
-  background: rgb(47, 47, 164);
-  top: -15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 3px solid rgb(198, 197, 197);
+  border-radius: 10px;
   left: -15px;
-  border-radius: 100%;
+  top: -15px;
+  background: rgb(47, 47, 164);
+  color: rgb(198, 197, 197);
 }
-.fa-arrow-circle-left:hover {
+.fa-arrow-left:hover {
   transform: scale(1.05);
   color: yellow;
+  border-color: yellow;
+}
+i {
+  cursor: pointer;
 }
 button {
   position: absolute;
